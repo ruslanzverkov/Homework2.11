@@ -2,9 +2,11 @@ package com.example.homework2_11.Service;
 
 import com.example.homework2_11.Basket.Product;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.SessionScope;
 
 import java.util.List;
 @Service
+@SessionScope
 public class ProductServiceImpl implements ProductService {
     private final List<Product> products;
 
